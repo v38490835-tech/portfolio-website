@@ -1,82 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
 
-<title>Portfolio Template</title>
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <div class="logo">Portfolio</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portfolio</div>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <button id="themeToggle">🌙</button>
-</nav>
+        <button id="themeToggle">🌙</button>
+    </nav>
 
-<section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-    <img src="assets/profile.jpg"
-         class="profile-image"
-         alt="Profile">
+        <img
+            src="assets/profile.jpg"
+            alt="Profile Picture"
+            class="profile-image"
+        >
 
-    <h1 id="name"></h1>
+        <h1 id="name">Your Name</h1>
 
-    <h2 id="role"></h2>
+        <h2 id="role">Student | Developer</h2>
 
-    <p id="tagline"></p>
+        <p id="tagline">
+            Create your future with technology.
+        </p>
 
-    <a href="assets/resume.pdf"
-       class="resume-btn"
-       target="_blank">
-       Download Resume
-    </a>
+        <a
+            href="assets/resume.pdf"
+            class="resume-btn"
+            target="_blank"
+        >
+            Download Resume
+        </a>
 
-</section>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p id="aboutText"></p>
-</section>
+    <!-- About -->
+    <section id="about">
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div id="skillsContainer"></div>
-</section>
+        <h2>About Me</h2>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div id="projectsContainer"></div>
-</section>
+        <p id="aboutText">
+            Replace this section with information about yourself.
+        </p>
 
-<section id="contact">
-    <h2>Contact</h2>
+    </section>
 
-    <p>Email: <span id="email"></span></p>
+    <!-- Skills -->
+    <section id="skills">
 
-    <div class="socials">
-        <a id="githubLink" target="_blank">GitHub</a>
-        <a id="linkedinLink" target="_blank">LinkedIn</a>
-    </div>
-</section>
+        <h2>Skills</h2>
 
-<footer>
-    © Portfolio Template
-</footer>
+        <div id="skillsContainer">
+            <!-- Filled automatically from config.js -->
+        </div>
 
-<script src="config.js"></script>
-<script src="script.js"></script>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div id="projectsContainer">
+            <!-- Filled automatically from config.js -->
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <span id="email">
+                your-email@example.com
+            </span>
+        </p>
+
+        <div class="socials">
+
+            <a
+                id="githubLink"
+                href="#"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+            <a
+                id="linkedinLink"
+                href="#"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Portfolio Template.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
