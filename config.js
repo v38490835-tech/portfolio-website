@@ -1,7 +1,7 @@
 const portfolio = {
     name: "Your Name",
-    role: "Software Developer",
-    tagline: "Building innovative digital solutions.",
+    role: "Student | Developer | Engineer | Designer",
+    tagline: "Create your future with technology.",
 
     email: "your-email@example.com",
 
@@ -9,33 +9,33 @@ const portfolio = {
     linkedin: "https://linkedin.com/in/yourprofile",
 
     about: `
-        Write a short introduction about yourself,
-        your education, interests, and career goals.
+        Replace this section with a short introduction about yourself,
+        your education, interests, skills, achievements, and career goals.
     `,
 
     skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Python",
-        "Java",
-        "React"
+        "Skill 1",
+        "Skill 2",
+        "Skill 3",
+        "Skill 4",
+        "Skill 5",
+        "Skill 6"
     ],
 
     projects: [
         {
-            title: "Project One",
-            description: "Short description of project.",
+            title: "Project Title 1",
+            description: "Brief description of your project.",
             link: "#"
         },
         {
-            title: "Project Two",
-            description: "Short description of project.",
+            title: "Project Title 2",
+            description: "Brief description of your project.",
             link: "#"
         },
         {
-            title: "Project Three",
-            description: "Short description of project.",
+            title: "Project Title 3",
+            description: "Brief description of your project.",
             link: "#"
         }
     ]
