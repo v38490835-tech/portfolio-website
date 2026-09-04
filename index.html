@@ -3,153 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio Website</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
-
-        body{
-            background:#f4f4f4;
-            color:#333;
-        }
-
-        header{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:50px 20px;
-        }
-
-        header h1{
-            font-size:40px;
-        }
-
-        header p{
-            margin-top:10px;
-            font-size:18px;
-        }
-
-        section{
-            max-width:1000px;
-            margin:auto;
-            padding:30px 20px;
-        }
-
-        .card{
-            background:white;
-            padding:20px;
-            margin-bottom:20px;
-            border-radius:10px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2{
-            margin-bottom:15px;
-            color:#222;
-        }
-
-        ul{
-            padding-left:20px;
-        }
-
-        li{
-            margin-bottom:8px;
-        }
-
-        footer{
-            text-align:center;
-            background:#222;
-            color:white;
-            padding:15px;
-            margin-top:20px;
-        }
-
-        a{
-            color:#0066cc;
-            text-decoration:none;
-        }
-
-        a:hover{
-            text-decoration:underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Student | Developer | Engineer | Designer</p>
-</header>
+    <nav>
+        <div class="logo">My Portfolio</div>
 
-<section>
-
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            Write a short introduction about yourself, your education,
-            interests, and career goals.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Skills</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <li>Skill 4</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="card">
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <p id="typing"></p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Write a brief introduction about yourself,
+            your education, interests, and career goals.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div class="fill" style="width:75%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+    </section>
+
+    <section id="projects">
         <h2>Projects</h2>
 
-        <h3>Project Title 1</h3>
-        <p>Short description of the project.</p>
+        <div class="project-container">
 
-        <br>
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Short description of project.</p>
+            </div>
 
-        <h3>Project Title 2</h3>
-        <p>Short description of the project.</p>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Short description of project.</p>
+            </div>
 
-        <br>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Short description of project.</p>
+            </div>
 
-        <h3>Project Title 3</h3>
-        <p>Short description of the project.</p>
-    </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h2>Education</h2>
-        <p>Degree / Course Name</p>
-        <p>Institution Name</p>
-        <p>Year of Graduation</p>
-    </div>
-
-    <div class="card">
+    <section id="contact">
         <h2>Contact</h2>
+
         <p>Email: your-email@example.com</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-        <p>
-            LinkedIn:
-            <a href="#">Your LinkedIn Profile</a>
-        </p>
-        <p>
-            GitHub:
-            <a href="#">Your GitHub Profile</a>
-        </p>
-    </div>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
 
-</section>
+    <footer>
+        <p>© 2026 Portfolio Website</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
