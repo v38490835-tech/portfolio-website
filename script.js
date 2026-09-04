@@ -1,34 +1,64 @@
-const text = [
-    "Student",
-    "Developer",
-    "Engineer",
-    "Designer"
-];
+document.getElementById("name").textContent =
+portfolio.name;
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+document.getElementById("role").textContent =
+portfolio.role;
 
-(function type(){
+document.getElementById("tagline").textContent =
+portfolio.tagline;
 
-    if(count === text.length){
-        count = 0;
-    }
+document.getElementById("aboutText").textContent =
+portfolio.about;
 
-    currentText = text[count];
-    letter = currentText.slice(0, ++index);
+document.getElementById("email").textContent =
+portfolio.email;
 
-    document.getElementById("typing").textContent = letter;
+document.getElementById("githubLink").href =
+portfolio.github;
 
-    if(letter.length === currentText.length){
-        count++;
-        index = 0;
+document.getElementById("linkedinLink").href =
+portfolio.linkedin;
 
-        setTimeout(type,1000);
-    }
-    else{
-        setTimeout(type,100);
-    }
+const skillsContainer =
+document.getElementById("skillsContainer");
 
-})();
+portfolio.skills.forEach(skill => {
+
+    const div =
+    document.createElement("div");
+
+    div.className = "skill";
+
+    div.textContent = skill;
+
+    skillsContainer.appendChild(div);
+});
+
+const projectsContainer =
+document.getElementById("projectsContainer");
+
+portfolio.projects.forEach(project => {
+
+    const card =
+    document.createElement("div");
+
+    card.className = "project";
+
+    card.innerHTML = `
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <br>
+        <a href="${project.link}" target="_blank">
+        View Project
+        </a>
+    `;
+
+    projectsContainer.appendChild(card);
+});
+
+document
+.getElementById("themeToggle")
+.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+});
